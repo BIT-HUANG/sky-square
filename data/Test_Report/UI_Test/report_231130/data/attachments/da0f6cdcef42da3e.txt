@@ -1,0 +1,24 @@
+INFO     mylog:conftest.py:11 已经获取<selenium.webdriver.chrome.webdriver.WebDriver (session="68f8ebecf139b27fba604fcad969ac8f")>
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_home_page_login方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\home_page.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的use_right_account_pwd_login_go_home_page方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\login_page.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:176 调用了find_and_send,输入的文本wuchengping@skycoresaas.com
+INFO     mylog:base_page.py:176 调用了find_and_send,输入的文本123456
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:login_page.py:15 执行了use_right_account_pwd_login
+INFO     mylog:base_page.py:159 **********执行了页面类里面的move_to_username_button方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\home_page.yaml
+INFO     mylog:base_page.py:188 调用了move_to_ele操作，索引是None
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_access_platform方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\home_page.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_platform_avatar方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的move_change_organization_ele方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:188 调用了move_to_ele操作，索引是None
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_change_organization方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_platform_avatar方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的get_platform_page_organization_name方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:203 调用了find操作

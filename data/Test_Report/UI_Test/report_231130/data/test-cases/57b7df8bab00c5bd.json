@@ -1,0 +1,108 @@
+{
+  "uid" : "57b7df8bab00c5bd",
+  "name" : "测试购物车功能中的全选功能",
+  "fullName" : "test_case.test_purchase_menu.test_cabinet_purchase_menu.test_shopping_cart.Test_ShoppingCart#test_click_select_all_",
+  "historyId" : "971eb4009eeb0d1c6c6c1275bb3c0dcb",
+  "time" : {
+    "start" : 1700726250455,
+    "stop" : 1700726270623,
+    "duration" : 20168
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_driver",
+    "time" : {
+      "start" : 1700726245219,
+      "stop" : 1700726250455,
+      "duration" : 5236
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c44ad1ba81e97e09",
+      "name" : "log",
+      "source" : "c44ad1ba81e97e09.txt",
+      "type" : "text/plain",
+      "size" : 3971
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "base_driver::0",
+    "time" : {
+      "start" : 1700726270625,
+      "stop" : 1700726272698,
+      "duration" : 2073
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试购物车功能"
+  }, {
+    "name" : "feature",
+    "value" : "测试购物车页面"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.test_purchase_menu.test_cabinet_purchase_menu"
+  }, {
+    "name" : "suite",
+    "value" : "test_shopping_cart"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_ShoppingCart"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-53FMLT9"
+  }, {
+    "name" : "thread",
+    "value" : "31352-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_purchase_menu.test_cabinet_purchase_menu.test_shopping_cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "57b7df8bab00c5bd.json",
+  "parameterValues" : [ ]
+}

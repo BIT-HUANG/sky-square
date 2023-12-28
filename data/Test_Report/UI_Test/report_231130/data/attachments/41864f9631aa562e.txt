@@ -1,0 +1,36 @@
+INFO     mylog:conftest.py:11 已经获取<selenium.webdriver.chrome.webdriver.WebDriver (session="a50e1c55903112045c1bd09f4e2c4f44")>
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_home_page_login方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\home_page.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的use_right_account_pwd_login_go_home_page方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\login_page.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:176 调用了find_and_send,输入的文本wuchengping@skycoresaas.com
+INFO     mylog:base_page.py:176 调用了find_and_send,输入的文本123456
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:login_page.py:15 执行了use_right_account_pwd_login
+INFO     mylog:base_page.py:159 **********执行了页面类里面的move_to_username_button方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\home_page.yaml
+INFO     mylog:base_page.py:188 调用了move_to_ele操作，索引是None
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_access_platform方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\home_page.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_platform_avatar方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的move_change_organization_ele方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:188 调用了move_to_ele操作，索引是None
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_change_organization方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的move_purchase_menu方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:188 调用了move_to_ele操作，索引是None
+INFO     mylog:base_page.py:159 **********执行了页面类里面的move_purchase_menu方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:188 调用了move_to_ele操作，索引是None
+INFO     mylog:base_page.py:159 **********执行了页面类里面的move_shopping_cart_and_click方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_cabinet_select_side_sliding_page方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\shopping_cart.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的move_by_offset_to_side_sliding方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\shopping_cart.yaml
+INFO     mylog:base_page.py:200 调用了move_by_offset操作，索引是[1500, 0]
+INFO     mylog:base_page.py:159 **********执行了页面类里面的scroll_side_sliding_down方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\shopping_cart.yaml
+INFO     mylog:base_page.py:191 调用了scroll_page操作，索引是[0, 500]
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_side_sliding_page_add_go_shopping方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\shopping_cart.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的get_add_shopping_cart_success_message方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\shopping_cart.yaml
+INFO     mylog:base_page.py:203 调用了find操作

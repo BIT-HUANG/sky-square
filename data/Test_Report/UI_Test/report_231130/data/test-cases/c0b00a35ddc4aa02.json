@@ -1,0 +1,126 @@
+{
+  "uid" : "c0b00a35ddc4aa02",
+  "name" : "测试游客未登录下，购买商品跳转到登录页面，再次登录后回到商品主页并对用户进行断言",
+  "fullName" : "test_case.test_home.Test_Home_page#test_move_to_ele_skycoresaas_shop_and_click_cabinet_series_add_cabinet_in_shop",
+  "historyId" : "135b33b61cea837587f33ced61ef2c30",
+  "time" : {
+    "start" : 1700726126802,
+    "stop" : 1700726142493,
+    "duration" : 15691
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_driver",
+    "time" : {
+      "start" : 1700726118879,
+      "stop" : 1700726126802,
+      "duration" : 7923
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "测试游客未登录下，购买商品跳转到登录页面，再次登录后回到商品主页并对用户进行断言",
+      "time" : {
+        "start" : 1700726126802,
+        "stop" : 1700726142493,
+        "duration" : 15691
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "3a7c3fd97ea49088",
+      "name" : "log",
+      "source" : "3a7c3fd97ea49088.txt",
+      "type" : "text/plain",
+      "size" : 1843
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "base_driver::0",
+    "time" : {
+      "start" : 1700726142494,
+      "stop" : 1700726144593,
+      "duration" : 2099
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试未登录下在商城首页操作"
+  }, {
+    "name" : "feature",
+    "value" : "测试商城首页_home_page"
+  }, {
+    "name" : "tag",
+    "value" : "p1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_home"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Home_page"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-53FMLT9"
+  }, {
+    "name" : "thread",
+    "value" : "31352-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_home"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "p1" ]
+  },
+  "source" : "c0b00a35ddc4aa02.json",
+  "parameterValues" : [ ]
+}

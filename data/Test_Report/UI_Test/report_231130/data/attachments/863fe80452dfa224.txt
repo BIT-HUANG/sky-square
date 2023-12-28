@@ -1,0 +1,15 @@
+INFO     mylog:conftest.py:11 已经获取<selenium.webdriver.chrome.webdriver.WebDriver (session="ed4b8bf94c27d5882ea17910955a0bfd")>
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_home_page_login方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\home_page.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_forgot_password方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\login_page.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:login_page.py:20 执行了click_forgot_password操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的reset_passwords方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\login_page.yaml
+INFO     mylog:base_page.py:176 调用了find_and_send,输入的文本18146712142
+INFO     mylog:base_page.py:176 调用了find_and_send,输入的文本123456
+INFO     mylog:base_page.py:176 调用了find_and_send,输入的文本123456
+INFO     mylog:base_page.py:176 调用了find_and_send,输入的文本123456
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的get_reset_passwords_message方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\login_page.yaml
+INFO     mylog:base_page.py:203 调用了find操作

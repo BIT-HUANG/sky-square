@@ -1,0 +1,165 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_case",
+    "children" : [ {
+      "name" : "test_home",
+      "children" : [ {
+        "name" : "Test_Home_page",
+        "children" : [ {
+          "name" : "测试游客未登录下，购买商品跳转到登录页面，再次登录后回到商品主页并对用户进行断言",
+          "uid" : "c0b00a35ddc4aa02",
+          "parentUid" : "3f629b81d42aa97cfb09ee461f571866",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700726126802,
+            "stop" : 1700726142493,
+            "duration" : 15691
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "测试游客未登录下，购买商品跳转到登录页面，再次登录后回到商品主页并添加购物车获取操作成功信息",
+          "uid" : "8fdbb1cf858ba12d",
+          "parentUid" : "3f629b81d42aa97cfb09ee461f571866",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700726152638,
+            "stop" : 1700726168781,
+            "duration" : 16143
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "3f629b81d42aa97cfb09ee461f571866"
+      } ],
+      "uid" : "a009ee0497f79184ba06a66ab43bfcb5"
+    }, {
+      "name" : "test_login",
+      "children" : [ {
+        "name" : "Test_login",
+        "children" : [ {
+          "name" : "通过商城首页点击登录跳转到登录页面并使用正确的账号和密码登录",
+          "uid" : "e320e33cbef84680",
+          "parentUid" : "4e7d4b2ec5805b89162edcedff16e7af",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700726179295,
+            "stop" : 1700726189245,
+            "duration" : 9950
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "测试忘记密码功能",
+          "uid" : "ab8acad0cf778a10",
+          "parentUid" : "4e7d4b2ec5805b89162edcedff16e7af",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700726199725,
+            "stop" : 1700726212328,
+            "duration" : 12603
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "4e7d4b2ec5805b89162edcedff16e7af"
+      } ],
+      "uid" : "b0d25e7592ecf0ad5c1e978c2b721247"
+    } ],
+    "uid" : "86abcc46617c603d802c3e378b13740e"
+  }, {
+    "name" : "test_case.test_purchase_menu",
+    "children" : [ {
+      "name" : "test_platform_menu",
+      "children" : [ {
+        "name" : "Test_Platform",
+        "children" : [ {
+          "name" : "游客登录成为客户切换组织的功能，并断言组织的名称",
+          "uid" : "7bafc29492eb404d",
+          "parentUid" : "232330c2ff7eb5ba73b0fd8d30faeb15",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700726222362,
+            "stop" : 1700726239064,
+            "duration" : 16702
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "232330c2ff7eb5ba73b0fd8d30faeb15"
+      } ],
+      "uid" : "cce75d67b01c32914a9c1a36fd9c32fe"
+    } ],
+    "uid" : "41f1056f5d03ebf86cb2f6e3f6e6f62d"
+  }, {
+    "name" : "test_case.test_purchase_menu.test_cabinet_purchase_menu",
+    "children" : [ {
+      "name" : "test_shopping_cart",
+      "children" : [ {
+        "name" : "Test_ShoppingCart",
+        "children" : [ {
+          "name" : "测试购物车功能中的全选功能",
+          "uid" : "57b7df8bab00c5bd",
+          "parentUid" : "d277876130ed37e770aa4c422222295b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700726250455,
+            "stop" : 1700726270623,
+            "duration" : 20168
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "测试购物车功能中，机柜选型侧滑页面添加机柜",
+          "uid" : "a4b97b1b9a86912b",
+          "parentUid" : "d277876130ed37e770aa4c422222295b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700726281290,
+            "stop" : 1700726309964,
+            "duration" : 28674
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "d277876130ed37e770aa4c422222295b"
+      } ],
+      "uid" : "6a1ae9424cf1f57dec0381b7a8fa3e15"
+    } ],
+    "uid" : "772a0b359faff99716ae7b469763af36"
+  }, {
+    "name" : "test_case.test_purchase_menu.test_cabinet_purchase_menu.test_order_settlement.test_payment_page",
+    "children" : [ {
+      "name" : "test_payment_page",
+      "children" : [ {
+        "name" : "Test_payment_page",
+        "children" : [ {
+          "name" : "测试点击【提交订单】后，跳转到支付页面，并获取支付页面的标题",
+          "uid" : "bfa20c2919176b53",
+          "parentUid" : "8b637b295712cc5db502fae98c97ba5c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700726319841,
+            "stop" : 1700726343058,
+            "duration" : 23217
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "8b637b295712cc5db502fae98c97ba5c"
+      } ],
+      "uid" : "cf571b2f7e2522658d636d6eacbb87fd"
+    } ],
+    "uid" : "c5c7766404eae52e196898ab1db0954f"
+  } ]
+}

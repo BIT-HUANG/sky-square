@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Directory</title>
+</head>
+<body>
+    <h1>File Directory</h1>
+        <ul>
+            {% for file, file_path in files.items() %}
+                {% if '.' in file %}
+                    <li><a href="{{ url_for('dir_listing', req_path=file_path) }}" target="_blank">{{ file }}</a></li>
+                {% else %}
+                    <li><a href="{{ url_for('dir_listing', req_path=file_path) }}">{{ file }}</a></li>
+                {% endif %}
+            {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,111 @@
+{
+  "uid" : "a4b97b1b9a86912b",
+  "name" : "测试购物车功能中，机柜选型侧滑页面添加机柜",
+  "fullName" : "test_case.test_purchase_menu.test_cabinet_purchase_menu.test_shopping_cart.Test_ShoppingCart#test_shopping_cart_cabinet_select_page_add_cabinet_fun",
+  "historyId" : "1c4cca4ebbe4d868151ece2d0994971c",
+  "time" : {
+    "start" : 1700726281290,
+    "stop" : 1700726309964,
+    "duration" : 28674
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_driver",
+    "time" : {
+      "start" : 1700726276758,
+      "stop" : 1700726281290,
+      "duration" : 4532
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "41864f9631aa562e",
+      "name" : "log",
+      "source" : "41864f9631aa562e.txt",
+      "type" : "text/plain",
+      "size" : 4938
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "base_driver::0",
+    "time" : {
+      "start" : 1700726309964,
+      "stop" : 1700726312025,
+      "duration" : 2061
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试购物车功能"
+  }, {
+    "name" : "feature",
+    "value" : "测试购物车页面"
+  }, {
+    "name" : "tag",
+    "value" : "p5"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.test_purchase_menu.test_cabinet_purchase_menu"
+  }, {
+    "name" : "suite",
+    "value" : "test_shopping_cart"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_ShoppingCart"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-53FMLT9"
+  }, {
+    "name" : "thread",
+    "value" : "31352-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_purchase_menu.test_cabinet_purchase_menu.test_shopping_cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "p5" ]
+  },
+  "source" : "a4b97b1b9a86912b.json",
+  "parameterValues" : [ ]
+}

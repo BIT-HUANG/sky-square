@@ -1,0 +1,114 @@
+{
+  "uid" : "bfa20c2919176b53",
+  "name" : "测试点击【提交订单】后，跳转到支付页面，并获取支付页面的标题",
+  "fullName" : "test_case.test_purchase_menu.test_cabinet_purchase_menu.test_order_settlement.test_payment_page.test_payment_page.Test_payment_page#test_get_payment_page_title_ele",
+  "historyId" : "5c1f2de50e28bbfec3457373c99ed488",
+  "time" : {
+    "start" : 1700726319841,
+    "stop" : 1700726343058,
+    "duration" : 23217
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_driver",
+    "time" : {
+      "start" : 1700726316100,
+      "stop" : 1700726319841,
+      "duration" : 3741
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f36e58b324c3b355",
+      "name" : "测试点击【提交订单】未生成订单的截图_1123075902.877640",
+      "source" : "f36e58b324c3b355.png",
+      "type" : "image/png",
+      "size" : 139027
+    }, {
+      "uid" : "b6f5af6ef8d67477",
+      "name" : "log",
+      "source" : "b6f5af6ef8d67477.txt",
+      "type" : "text/plain",
+      "size" : 7154
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "base_driver::0",
+    "time" : {
+      "start" : 1700726343058,
+      "stop" : 1700726345160,
+      "duration" : 2102
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试点击【提交订单】后,是否py成功生成订单"
+  }, {
+    "name" : "feature",
+    "value" : "测试支付页面"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.test_purchase_menu.test_cabinet_purchase_menu.test_order_settlement.test_payment_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_payment_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_payment_page"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-53FMLT9"
+  }, {
+    "name" : "thread",
+    "value" : "31352-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_purchase_menu.test_cabinet_purchase_menu.test_order_settlement.test_payment_page.test_payment_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bfa20c2919176b53.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,95 @@
+INFO     mylog:conftest.py:11 已经获取<selenium.webdriver.chrome.webdriver.WebDriver (session="4fa88c749fc53fbf8bb47a7a524000fb")>
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_home_page_login方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\home_page.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的use_right_account_pwd_login_go_home_page方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\login_page.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:176 调用了find_and_send,输入的文本wuchengping@skycoresaas.com
+INFO     mylog:base_page.py:176 调用了find_and_send,输入的文本123456
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:login_page.py:15 执行了use_right_account_pwd_login
+INFO     mylog:base_page.py:159 **********执行了页面类里面的move_to_username_button方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\home_page.yaml
+INFO     mylog:base_page.py:188 调用了move_to_ele操作，索引是None
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_access_platform方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\home_page.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_platform_avatar方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的move_change_organization_ele方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:188 调用了move_to_ele操作，索引是None
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_change_organization方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的move_purchase_menu方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:188 调用了move_to_ele操作，索引是None
+INFO     mylog:base_page.py:159 **********执行了页面类里面的move_purchase_menu方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:188 调用了move_to_ele操作，索引是None
+INFO     mylog:base_page.py:159 **********执行了页面类里面的move_shopping_cart_and_click方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\platform.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_select_all方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\shopping_cart.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的click_go_to_result方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\shopping_cart.yaml
+INFO     mylog:base_page.py:170 调用了find_and_click操作
+INFO     mylog:base_page.py:159 **********执行了页面类里面的ordinary_VAT_invoice方法*****************,yaml文件的路径是C:\Users\dell\PycharmProjects\pythonProject\automated_testing\py_yaml\order_settlement.yaml
+INFO     common.handle_black:handle_black.py:20 在黑名单中查找元素('xpath', "//*[@text='取消']")
+INFO     common.handle_black:handle_black.py:29 在黑名单中元素('xpath', "//*[@text='取消']")未在页面中定位到
+INFO     common.handle_black:handle_black.py:20 在黑名单中查找元素('xpath', "//*[@text='关闭']")
+INFO     common.handle_black:handle_black.py:29 在黑名单中元素('xpath', "//*[@text='关闭']")未在页面中定位到
+ERROR    mylog:base_page.py:216 元素定位交互异常，传入的参数是find_and_click,传入的参数是['XPATH', '//span[text()="增值税普通发票"]/parent::label']::下标为None::等待时间为1
+ERROR    mylog:base_page.py:218 报错信息是Message: element click intercepted: Element <label class="ant-radio-button-wrapper" data-v-0fc7108b="">...</label> is not clickable at point (418, 638). Other element would receive the click: <div class="allInvoice" data-v-0fc7108b="">...</div>
+  (Session info: headless chrome=117.0.5938.150)
+Stacktrace:
+	GetHandleVerifier [0x0108CFE3+45267]
+	(No symbol) [0x01019741]
+	(No symbol) [0x00F0BE1D]
+	(No symbol) [0x00F43B81]
+	(No symbol) [0x00F4267F]
+	(No symbol) [0x00F40C6B]
+	(No symbol) [0x00F40005]
+	(No symbol) [0x00F3855A]
+	(No symbol) [0x00F5B03C]
+	(No symbol) [0x00F37F96]
+	(No symbol) [0x00F5B2B4]
+	(No symbol) [0x00F6DDDA]
+	(No symbol) [0x00F5AE36]
+	(No symbol) [0x00F3674E]
+	(No symbol) [0x00F378ED]
+	GetHandleVerifier [0x01345659+2897737]
+	GetHandleVerifier [0x0138E78B+3197051]
+	GetHandleVerifier [0x01388571+3171937]
+	GetHandleVerifier [0x01115E40+606000]
+	(No symbol) [0x0102338C]
+	(No symbol) [0x0101F508]
+	(No symbol) [0x0101F62F]
+	(No symbol) [0x01011D27]
+	BaseThreadInitThunk [0x761E7BA9+25]
+	RtlInitializeExceptionChain [0x775EBD2B+107]
+	RtlClearBits [0x775EBCAF+191]
+
+ERROR    mylog:test_payment_page.py:17 错误信息为Message: element click intercepted: Element <label class="ant-radio-button-wrapper" data-v-0fc7108b="">...</label> is not clickable at point (418, 638). Other element would receive the click: <div class="allInvoice" data-v-0fc7108b="">...</div>
+  (Session info: headless chrome=117.0.5938.150)
+Stacktrace:
+	GetHandleVerifier [0x0108CFE3+45267]
+	(No symbol) [0x01019741]
+	(No symbol) [0x00F0BE1D]
+	(No symbol) [0x00F43B81]
+	(No symbol) [0x00F4267F]
+	(No symbol) [0x00F40C6B]
+	(No symbol) [0x00F40005]
+	(No symbol) [0x00F3855A]
+	(No symbol) [0x00F5B03C]
+	(No symbol) [0x00F37F96]
+	(No symbol) [0x00F5B2B4]
+	(No symbol) [0x00F6DDDA]
+	(No symbol) [0x00F5AE36]
+	(No symbol) [0x00F3674E]
+	(No symbol) [0x00F378ED]
+	GetHandleVerifier [0x01345659+2897737]
+	GetHandleVerifier [0x0138E78B+3197051]
+	GetHandleVerifier [0x01388571+3171937]
+	GetHandleVerifier [0x01115E40+606000]
+	(No symbol) [0x0102338C]
+	(No symbol) [0x0101F508]
+	(No symbol) [0x0101F62F]
+	(No symbol) [0x01011D27]
+	BaseThreadInitThunk [0x761E7BA9+25]
+	RtlInitializeExceptionChain [0x775EBD2B+107]
+	RtlClearBits [0x775EBCAF+191]

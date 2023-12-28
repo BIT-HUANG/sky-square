@@ -1,0 +1,114 @@
+{
+  "uid" : "ab8acad0cf778a10",
+  "name" : "测试忘记密码功能",
+  "fullName" : "test_case.test_login.Test_login#test_reset_passwords_function",
+  "historyId" : "23b2f76a0c43eb6b30b80298c5b60c93",
+  "time" : {
+    "start" : 1700726199725,
+    "stop" : 1700726212328,
+    "duration" : 12603
+  },
+  "description" : "从商城页面跳转到登录页面，点击忘记密码，测试忘记密码功能，并获得操作成功信息",
+  "descriptionHtml" : "<p>从商城页面跳转到登录页面，点击忘记密码，测试忘记密码功能，并获得操作成功信息</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_driver",
+    "time" : {
+      "start" : 1700726195392,
+      "stop" : 1700726199724,
+      "duration" : 4332
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "从商城页面跳转到登录页面，点击忘记密码，测试忘记密码功能，并获得操作成功信息",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "863fe80452dfa224",
+      "name" : "log",
+      "source" : "863fe80452dfa224.txt",
+      "type" : "text/plain",
+      "size" : 1703
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "base_driver::0",
+    "time" : {
+      "start" : 1700726212329,
+      "stop" : 1700726214423,
+      "duration" : 2094
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试登录功能"
+  }, {
+    "name" : "feature",
+    "value" : "测试登录页面"
+  }, {
+    "name" : "tag",
+    "value" : "p0"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-53FMLT9"
+  }, {
+    "name" : "thread",
+    "value" : "31352-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "p0" ]
+  },
+  "source" : "ab8acad0cf778a10.json",
+  "parameterValues" : [ ]
+}

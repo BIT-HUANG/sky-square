@@ -1,0 +1,111 @@
+{
+  "uid" : "7bafc29492eb404d",
+  "name" : "游客登录成为客户切换组织的功能，并断言组织的名称",
+  "fullName" : "test_case.test_purchase_menu.test_platform_menu.Test_Platform#test_change_organization",
+  "historyId" : "e3d6dfd801ac19a115f008ff8485cd7a",
+  "time" : {
+    "start" : 1700726222362,
+    "stop" : 1700726239064,
+    "duration" : 16702
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_driver",
+    "time" : {
+      "start" : 1700726218520,
+      "stop" : 1700726222362,
+      "duration" : 3842
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "da0f6cdcef42da3e",
+      "name" : "log",
+      "source" : "da0f6cdcef42da3e.txt",
+      "type" : "text/plain",
+      "size" : 3107
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "base_driver::0",
+    "time" : {
+      "start" : 1700726239064,
+      "stop" : 1700726241139,
+      "duration" : 2075
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试平台中，切换组织的功能"
+  }, {
+    "name" : "feature",
+    "value" : "测试平台页面"
+  }, {
+    "name" : "tag",
+    "value" : "p3"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.test_purchase_menu"
+  }, {
+    "name" : "suite",
+    "value" : "test_platform_menu"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Platform"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-53FMLT9"
+  }, {
+    "name" : "thread",
+    "value" : "31352-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_purchase_menu.test_platform_menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "p3" ]
+  },
+  "source" : "7bafc29492eb404d.json",
+  "parameterValues" : [ ]
+}

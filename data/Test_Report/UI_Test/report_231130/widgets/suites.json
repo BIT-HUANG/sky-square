@@ -1,0 +1,48 @@
+{
+  "total" : 4,
+  "items" : [ {
+    "uid" : "86abcc46617c603d802c3e378b13740e",
+    "name" : "test_case",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "772a0b359faff99716ae7b469763af36",
+    "name" : "test_case.test_purchase_menu.test_cabinet_purchase_menu",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "41f1056f5d03ebf86cb2f6e3f6e6f62d",
+    "name" : "test_case.test_purchase_menu",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "c5c7766404eae52e196898ab1db0954f",
+    "name" : "test_case.test_purchase_menu.test_cabinet_purchase_menu.test_order_settlement.test_payment_page",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

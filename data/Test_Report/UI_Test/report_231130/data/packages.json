@@ -1,0 +1,141 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test_case",
+    "children" : [ {
+      "name" : "test_home",
+      "children" : [ {
+        "name" : "测试游客未登录下，购买商品跳转到登录页面，再次登录后回到商品主页并对用户进行断言",
+        "uid" : "c0b00a35ddc4aa02",
+        "parentUid" : "84c7fcf59c65909e5aceb78fe4c0ff20",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700726126802,
+          "stop" : 1700726142493,
+          "duration" : 15691
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试游客未登录下，购买商品跳转到登录页面，再次登录后回到商品主页并添加购物车获取操作成功信息",
+        "uid" : "8fdbb1cf858ba12d",
+        "parentUid" : "84c7fcf59c65909e5aceb78fe4c0ff20",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700726152638,
+          "stop" : 1700726168781,
+          "duration" : 16143
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "84c7fcf59c65909e5aceb78fe4c0ff20"
+    }, {
+      "name" : "test_login",
+      "children" : [ {
+        "name" : "通过商城首页点击登录跳转到登录页面并使用正确的账号和密码登录",
+        "uid" : "e320e33cbef84680",
+        "parentUid" : "bc19b968b5c7989eda8450dbfaf01ab2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700726179295,
+          "stop" : 1700726189245,
+          "duration" : 9950
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试忘记密码功能",
+        "uid" : "ab8acad0cf778a10",
+        "parentUid" : "bc19b968b5c7989eda8450dbfaf01ab2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700726199725,
+          "stop" : 1700726212328,
+          "duration" : 12603
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bc19b968b5c7989eda8450dbfaf01ab2"
+    }, {
+      "name" : "test_purchase_menu",
+      "children" : [ {
+        "name" : "test_platform_menu",
+        "children" : [ {
+          "name" : "游客登录成为客户切换组织的功能，并断言组织的名称",
+          "uid" : "7bafc29492eb404d",
+          "parentUid" : "2d0525af7c6a03e3ed55f2bfdfc883c1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700726222362,
+            "stop" : 1700726239064,
+            "duration" : 16702
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "2d0525af7c6a03e3ed55f2bfdfc883c1"
+      }, {
+        "name" : "test_cabinet_purchase_menu",
+        "children" : [ {
+          "name" : "test_shopping_cart",
+          "children" : [ {
+            "name" : "测试购物车功能中的全选功能",
+            "uid" : "57b7df8bab00c5bd",
+            "parentUid" : "fdad2d3a78bb268c25c92cc605023c68",
+            "status" : "passed",
+            "time" : {
+              "start" : 1700726250455,
+              "stop" : 1700726270623,
+              "duration" : 20168
+            },
+            "flaky" : false,
+            "newFailed" : false,
+            "parameters" : [ ]
+          }, {
+            "name" : "测试购物车功能中，机柜选型侧滑页面添加机柜",
+            "uid" : "a4b97b1b9a86912b",
+            "parentUid" : "fdad2d3a78bb268c25c92cc605023c68",
+            "status" : "passed",
+            "time" : {
+              "start" : 1700726281290,
+              "stop" : 1700726309964,
+              "duration" : 28674
+            },
+            "flaky" : false,
+            "newFailed" : false,
+            "parameters" : [ ]
+          } ],
+          "uid" : "fdad2d3a78bb268c25c92cc605023c68"
+        }, {
+          "name" : "test_order_settlement.test_payment_page.test_payment_page",
+          "children" : [ {
+            "name" : "测试点击【提交订单】后，跳转到支付页面，并获取支付页面的标题",
+            "uid" : "bfa20c2919176b53",
+            "parentUid" : "a97351934ece0484ac51cde09b75e7d8",
+            "status" : "passed",
+            "time" : {
+              "start" : 1700726319841,
+              "stop" : 1700726343058,
+              "duration" : 23217
+            },
+            "flaky" : false,
+            "newFailed" : false,
+            "parameters" : [ ]
+          } ],
+          "uid" : "test_order_settlement.test_payment_page.test_payment_page"
+        } ],
+        "uid" : "d9d5ca241c5f9a51a7ab6a2094b17b23"
+      } ],
+      "uid" : "1e39abc092d020493fbac55c70c0ef88"
+    } ],
+    "uid" : "3b2e467b921b0ea8d4803b9c79d92d0c"
+  } ]
+}
