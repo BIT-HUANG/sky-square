@@ -3,6 +3,8 @@ import io
 import jenkins
 import requests
 import zipfile
+import pandas as pd
+from bs4 import BeautifulSoup
 from requests.auth import HTTPBasicAuth
 from portalUtils.Logger import Logger
 from qaTools.config import BaseConfig as BC
@@ -13,6 +15,16 @@ class QAJenkinsOperation:
         self.jenkins_report_logger = Logger.get_logger("SKY", "JenkinsReportServ")
         self.server = jenkins.Jenkins(
             url=BC.QA_JENKINS_URL, username=BC.QA_JENKINS_USERNAME, password=BC.QA_JENKINS_PASSWORD)
+
+    def get_jobs_by_views(self, view):
+        job_list = list()
+        try:
+            jobs = self.server.get_jobs(view_name=view)
+        except Exception as e:
+            return e
+        for job in jobs:
+            job_list.append(job['fullname'])
+        return job_list
 
     def get_all_job(self):
         job_list = list()
@@ -94,6 +106,26 @@ class QAJenkinsOperation:
             return e
         return build_result
 
+    def get_apifox_report_list_by_ui(self, job_name):
+        reports_url = BC.QA_JENKINS_URL + '/job/' + job_name + '/ws/apifox-reports'
+        self.jenkins_report_logger.info('get job report list: ' + job_name)
+        response = requests.get(url=reports_url, auth=HTTPBasicAuth(BC.QA_JENKINS_USERNAME, BC.QA_JENKINS_PASSWORD))
+        soup = BeautifulSoup(response.content, "html.parser")
+        table = soup.find('table', attrs={'class': 'fileList'})
+        df = pd.read_html(str(table), header=None)[0]
+        report_dict_list = list()
+        for index, row in df.iterrows():  # 按行遍历，将DataFrame的每一行迭代为(index, Series)对，可以通过row[name]对元素进行访问。
+            branch_dict = {'name': row[1], 'time': row[2]}
+            report_dict_list.append(branch_dict)
+        report_dict_list.pop()
+        return report_dict_list
+
+    def get_apifox_report_html(self, job_name, build_no):
+        report_url = BC.QA_JENKINS_URL + '/job/' + job_name + '/ws/apifox-reports/' + job_name + '_' + build_no + '.html'
+        response = requests.get(url=report_url, auth=HTTPBasicAuth(BC.QA_JENKINS_USERNAME, BC.QA_JENKINS_PASSWORD))
+        self.jenkins_report_logger.info('get job html report content: ' + job_name)
+        report_content = response.text
+        return report_content
 
 # QJO = QAJenkinsOperation()
 # result = QJO.get_artifact_info_by_name_and_build_id('QA_automated_testing', 8)
@@ -103,4 +135,7 @@ class QAJenkinsOperation:
 # para = {'branch': 'v1.0.0.1'}
 # result = QJO.build_with_parameter('QA_automated_testing', para)
 # QJO.download_artifacts('QA_automated_testing', '8', 'allure-report.zip')
+# result = QJO.get_jobs_by_views('API_TEST')
+# result = QJO.get_apifox_report_by_ui('apifox-oms-shopping_cart')
+# result = QJO.get_apifox_report_html('apifox-oms-shopping_cart', '15')
 # print(result)

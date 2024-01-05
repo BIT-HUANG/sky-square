@@ -1,6 +1,7 @@
 from qaTools.environmentCompare.utils.server import JenkinsOperation
 from qaTools.tcmBranch.utils.server import ConfluenceOperation
 from portalUtils.Logger import Logger
+import time
 
 
 class EnvironmentCompare:
@@ -25,13 +26,28 @@ class EnvironmentCompare:
     def environment_compare_with_tcm(self):
         jenkins_list = self.environment_compare()
         tcm_list = self.tcm_service_info()
-        print(jenkins_list)
-        print(tcm_list)
         for tcm in tcm_list:
             for jenkins in jenkins_list:
                 if tcm['service'] in jenkins['service']:
                     jenkins['TCM'] = tcm['tcm']
+                    if jenkins['QA'] != jenkins['TCM']:
+                        jenkins['QA_result'] = 1
+                    if jenkins['UAT'] != jenkins['TCM']:
+                        jenkins['UAT_result'] = 1
         self.ec_logger.info('tcm_compare_result is:  ')
         self.ec_logger.info(jenkins_list)
         return jenkins_list
 
+    def deploy_service(self, deploy_list):
+        result_list = list()
+        for deploy in deploy_list:
+            result = JenkinsOperation(self.views).deploy_service_to_env_with_tag(
+                deploy['service'], deploy['environment'], deploy['tag'])
+            result_list.append({'service': deploy['service'], 'result': result})
+            time.sleep(1)
+        return result_list
+
+
+EC = EnvironmentCompare(['QA', 'UAT'], 'TCM 2023-12-28 常规发版')
+result = EC.environment_compare_with_tcm()
+print(result)

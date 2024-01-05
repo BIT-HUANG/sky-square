@@ -1,13 +1,15 @@
 import portalService
 from flask_cors import *
-from flask import Flask, request, jsonify, render_template, send_file, abort
+from flask import Flask, request, jsonify, render_template, send_file, abort, Response
 import json
 from portalUtils.FileSystem import FileSystemSrv
 from testSkyCore.services.JiraScanServ import JiraScanServ
 from qaTools.environmentCompare.services.EnvironmentCompare import EnvironmentCompare
 from qaTools.jenkinsReport.services.ReportUI import QAJenkinsUIReport
+from qaTools.jenkinsReport.services.ReportAPI import QAJenkinsAPIReport
 from qaTools.tcmBranch.service.TcmBranch import TcmBranch
 from portalUtils.Logger import Logger
+from openAI.wenxinERNIE.services.chatWenxin import ChatWenxin
 
 portal_logger = Logger.get_logger("SKY", "Portal")
 
@@ -19,6 +21,23 @@ res_body = {
     'message': str(),
     'data': list()
 }
+
+
+@app.route("/skysquare/wenxin-chat", methods=["POST", "GET"])
+def chat_with_wenxin():
+    json_data_dict = request.get_json()
+    user_msg = json_data_dict['user_msg']
+    CW = ChatWenxin()
+    result = CW.talk_to_bot(user_msg)
+    del CW
+    return jsonify(code=200, message='Success', data=result)
+
+
+@app.route("/skysquare/wenxin-chat-clean", methods=["POST"])
+def clean_history_with_wenxin():
+    CW = ChatWenxin()
+    result = CW.clean_chat_history()
+    return jsonify(code=200, message='Success', data=result)
 
 
 @app.route("/skysquare/wechat_test", methods=["POST", "GET"])
@@ -76,6 +95,18 @@ def get_tcm_page():
         TB = TcmBranch()
         tcm_page = TB.get_tcm_page()
         return jsonify(code=200, message='Success', data=tcm_page)
+    except Exception as e:
+        return jsonify(code=500, message="Fail, %s" % e, data=[])
+
+
+@app.route("/skysquare/qa_tools/environment_compare/deploy-service", methods=["POST"])
+def deploy_service():
+    try:
+        json_data_dict = request.get_json()
+        deploy_list = json_data_dict['deploy_list']
+        EC = EnvironmentCompare('', '')
+        result = EC.deploy_service(deploy_list)
+        return jsonify(code=200, message='Success', data=result)
     except Exception as e:
         return jsonify(code=500, message="Fail, %s" % e, data=[])
 
@@ -192,6 +223,42 @@ def build_jenkins_job_with_parameter():
         result = list()
         result.append(QJR.build_with_parameter_single_branch(job_name, parameter))
         return jsonify(code=200, message="Success", data=result)
+    except Exception as e:
+        portal_logger.error(e)
+        return jsonify(code=500, message="Fail, %s" % e, data=[])
+
+
+@app.route('/skysquare/get-api-test-job-list', methods=['POST'])
+def get_api_test_job_list():
+    try:
+        QJR = QAJenkinsAPIReport()
+        result = QJR.get_api_test_job()
+        return jsonify(code=200, message="Success", data=result)
+    except Exception as e:
+        portal_logger.error(e)
+        return jsonify(code=500, message="Fail, %s" % e, data=[])
+
+
+@app.route('/skysquare/get-api-test-job-build-list', methods=['POST'])
+def get_api_test_job_build_list():
+    try:
+        job_name = request.get_json()['job_name']
+        QJR = QAJenkinsAPIReport()
+        result = QJR.get_all_build_result_by_job_name(job_name)
+        return jsonify(code=200, message="Success", data=result)
+    except Exception as e:
+        portal_logger.error(e)
+        return jsonify(code=500, message="Fail, %s" % e, data=[])
+
+
+@app.route('/skysquare/get-api-test-report', methods=['GET', 'POST'])
+def get_api_test_report():
+    try:
+        job_name = request.get_json()['job_name']
+        build_no = request.get_json()['build_no']
+        QJR = QAJenkinsAPIReport()
+        result = QJR.get_html_report(job_name, build_no)
+        return Response(result, mimetype='text/html')
     except Exception as e:
         portal_logger.error(e)
         return jsonify(code=500, message="Fail, %s" % e, data=[])

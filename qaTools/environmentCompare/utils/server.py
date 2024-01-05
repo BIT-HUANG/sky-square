@@ -53,3 +53,12 @@ class JenkinsOperation:
                 job_build_dict[env] = build_info
             build_info_list.append(job_build_dict)
         return build_info_list
+
+    def deploy_service_to_env_with_tag(self, service, env, tag):
+        try:
+            job_name = service + '_' + env
+            para = {'TAG': tag}
+            build_result = self.server.build_job(name=job_name, parameters=para)
+        except Exception as e:
+            return e
+        return build_result

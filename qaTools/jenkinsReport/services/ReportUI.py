@@ -11,7 +11,7 @@ class QAJenkinsUIReport:
         self.FSS = FileSystemSrv()
 
     def get_all_jobs(self):
-        job_list = self.QJO.get_all_job()
+        job_list = self.QJO.get_jobs_by_views('UI_TEST')
         return job_list
 
     def get_all_build_by_job_name(self, job_name):
